@@ -451,25 +451,66 @@ main .text {
 
 /*Постоянные клиенты*/
 
-.label {
+.label a {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
     width: 170px;
     height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yaco {
+    display: block;
+    background-image: url(../images/logo1.svg);
+    background-size: 45px;
+}
+
+.tagline {
+    display: block;
+    background-image: url(../images/logo2.svg);
+    background-size: 40px 52px;
+}
+
+.company {
+    display: block;
+    background-image: url(../images/logo3.svg);
+    background-size: 41px 43px;
+}
+
+.foster {
+    display: block;
+    background-image: url(../images/logo4.svg);
+    background-size: 80px 42px;
+}
+
+.brand {
+    display: block;
+    background-image: url(../images/logo5.svg);
+    background-size: 59px 48px;
+}
+
+.ctl {
+    display: block;
+    background-image: url(../images/logo6.svg);
+    background-size: 89px 46px;
 }
 
 .clients .label.label:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
-.logo a {
-    list-style: none;
-    margin: 0;
-    text-decoration: none;
-    color: #afb1b8;
+.logotype {
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo a:hover,
-.logo a:focus {
-    color: var(--accent-color);
+.logotype a:hover,
+.logotype a:focus {
+    background-color: var(--accent-color);
 }
 
 
@@ -753,6 +794,11 @@ main .text {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+}
+
+.links:hover,
+.links:focus {
+    background-color: var(--accent-color);
 }
 
 .instagram {
