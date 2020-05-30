@@ -796,8 +796,7 @@ main .text {
     border-radius: 50%;
 }
 
-.links:hover,
-.links:focus {
+.links a:hover {
     background-color: var(--accent-color);
 }
 
