@@ -94,6 +94,45 @@ main .text {
     color: #757575;
 }
 
+.header-font::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.icon-letter::before {
+    width: 16px;
+    height: 11px;
+    background-image: url(../images/mail.svg);
+}
+
+.icon-mobile::before {
+    width: 10px;
+    height: 15px;
+    background-image: url(../images/phone.svg);
+}
+
+
+/*Hero*/
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid orangered;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
+}
+
+
+/*Our team*/
+
 .team {
     background-color: white;
     padding-top: 94px;
@@ -118,15 +157,14 @@ main .text {
     border-bottom-right-radius: 4px;
     text-align: center;
     background-color: #ffffff;
-}
-
-.com>.member+.member {
-    margin-left: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .section {
     margin-top: 0;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
+    padding-top: 200px;
     color: #ffffff;
     font-style: normal;
     font-weight: 900;
@@ -219,9 +257,10 @@ main .text {
 
 .com {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
+}
+
+.com>.member+.member {
+    margin-left: 30px;
 }
 
 .main {
@@ -250,6 +289,33 @@ main .text {
 
 .size {
     width: 270px;
+}
+
+.size::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+}
+
+.size:nth-child(1)::before {
+    background-image: url(../images/sattelite.svg);
+}
+
+.size:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+}
+
+.size:nth-child(3)::before {
+    background-image: url(../images/diagramma.svg);
+}
+
+.size:nth-child(4)::before {
+    background-image: url(../images/Vector.svg);
 }
 
 .inside {
@@ -281,10 +347,11 @@ main .text {
     margin-bottom: 32px;
 }
 
-.contact a:hover,
+
+/*.contact a:hover,
 .contact a:focus {
     color: var(--accent-color);
-}
+}*/
 
 .header-font {
     font-weight: 500;
@@ -343,15 +410,42 @@ main .text {
     color: #757575;
 }
 
-.link a {
-    list-style: none;
-    text-decoration: none;
-    color: #afb1b8;
+.link {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 36px;
+    padding-left: 44px;
+    padding-right: 44px;
+    justify-content: space-between;
 }
 
-.link a :hover,
-.link a:focus {
-    color: var(--accent-color);
+.social-link a {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-instagram {
+    display: block;
+    background-image: url(../images/instagram.svg);
+}
+
+.icon-tweeter {
+    display: block;
+    background-image: url(../images/tweeter.svg);
+}
+
+.icon-facebook {
+    display: block;
+    background-image: url(../images/facebook.svg);
+}
+
+.icon-linkedin {
+    display: block;
+    background-image: url(../images/linkedin.svg);
 }
 
 
@@ -450,16 +544,37 @@ main .text {
 }
 
 .button-follower {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
     margin: 0;
     border-radius: 4px;
-    padding: 10px 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
     width: 200px;
     min-height: 50px;
     background-color: #2196f3;
     border-color: transparent;
     color: white;
     margin-bottom: 56px;
+    cursor: pointer;
+}
+
+
+/*
+.button-follower:hover,
+.button-follower:focus {
+    background-color: palevioletred;
+}*/
+
+.button-follower::after {
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url(../images/icon_send.png);
+    background-size: contain;
+    margin-left: 10px;
 }
 
 .button-list {
@@ -613,10 +728,9 @@ main .text {
     color: #ffffff;
 }
 
-.footer-links a {
-    margin-top: 0;
-    text-decoration: none;
-    color: #afb1b8;
+.footer-links {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-links a:hover,
@@ -625,8 +739,40 @@ main .text {
 }
 
 .join-us .footer-links {
-    text-decoration: none;
+    width: 206px;
     display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.instagram {
+    display: block;
+    background-image: url(../images/instagramfooter.svg);
+}
+
+.tweeter {
+    display: block;
+    background-image: url(../images/twitterfooter.svg);
+}
+
+.facebook {
+    display: block;
+    background-image: url(../images/facebookfooter.svg);
+}
+
+.linkedin {
+    display: block;
+    background-image: url(../images/linkedinfooter.svg);
 }
 
 .address,
@@ -674,4 +820,16 @@ main .text {
     line-height: 2;
     letter-spacing: 0.03em;
     text-align: center;
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid orangered;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
 }
