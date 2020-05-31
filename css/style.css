@@ -303,19 +303,19 @@ main .text {
 }
 
 .size:nth-child(1)::before {
-    background-image: url(../images/sattelite.svg);
+    background-image: url(../images/antennasize.svg);
 }
 
 .size:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
+    background-image: url(../images/clocksize.svg);
 }
 
 .size:nth-child(3)::before {
-    background-image: url(../images/diagramma.svg);
+    background-image: url(../images/diagramsize.svg);
 }
 
 .size:nth-child(4)::before {
-    background-image: url(../images/Vector.svg);
+    background-image: url(../images/astronautsize.svg);
 }
 
 .inside {
