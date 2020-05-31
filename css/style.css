@@ -23,13 +23,13 @@ body {
     width: 15px;
     height: 11px;
     margin-right: 10px;
+    fill: #757575;
 }
 
-
-/*.link-header-font:hover,
+.link-header-font:hover,
 .link-header-font:focus {
     color: var(--accent);
-}*/
+}
 
 .logo-lin {
     color: #212121;
@@ -77,21 +77,17 @@ body {
     margin-left: 50px;
 }
 
-
-/*.site-nav .link-header-font {
+.site-nav .link-header-font {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-title-color);
-}*/
+}
 
-
-/*.site-nav .link-header-font:hover,
-.site-nav .link-header-font:focus
+.site-nav .link-header-font:hover,
+.site-nav .link-header-font:focus,
 .auth-nav .link-header-font:hover,
-.auth-nav .link-header-font:focus*/
-
-{
+.auth-nav .link-header-font:focus {
     color: var(--accent-color);
 }
 
