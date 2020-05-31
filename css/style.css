@@ -13,6 +13,24 @@ body {
 
 /*Header*/
 
+.envelope {
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+}
+
+.smartphone {
+    width: 15px;
+    height: 11px;
+    margin-right: 10px;
+}
+
+
+/*.link-header-font:hover,
+.link-header-font:focus {
+    color: var(--accent);
+}*/
+
 .logo-lin {
     color: #212121;
     font-family: raleway, sans-serif;
@@ -27,7 +45,7 @@ body {
     color: var(--accent-color);
 }
 
-.header-font {
+.link-header-font {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -59,17 +77,21 @@ body {
     margin-left: 50px;
 }
 
-.site-nav .lin {
+
+/*.site-nav .link-header-font {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-title-color);
-}
+}*/
 
-.site-nav .lin:hover,
-.site-nav .lin:focus,
-.auth-nav .lin:hover,
-.auth-nav .lin:focus {
+
+/*.site-nav .link-header-font:hover,
+.site-nav .link-header-font:focus
+.auth-nav .link-header-font:hover,
+.auth-nav .link-header-font:focus*/
+
+{
     color: var(--accent-color);
 }
 
@@ -79,7 +101,7 @@ body {
     margin-left: auto;
 }
 
-.auth-nav .lin {
+.auth-nav .link-header-font {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -89,20 +111,10 @@ body {
     margin-left: 30px;
 }
 
-.auth-nav .lin,
+.auth-nav .link-header-font,
 main .text {
     color: #757575;
 }
-
-
-/*.header-font::before {
-    content: '';
-    display: inline-block;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-}*/
 
 
 /*Hero*/
