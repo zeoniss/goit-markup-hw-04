@@ -35,12 +35,6 @@ body {
     text-decoration: none;
 }
 
-.auth-nav .lin .header-font {
-    display: flex;
-    align-items: center;
-    fill: #757575;
-}
-
 .header {
     display: flex;
     align-items: center;
@@ -388,94 +382,41 @@ main .text {
 .link {
     display: flex;
     padding-top: 16px;
-    padding-bottom: 36px;
-    padding-left: 44px;
-    padding-right: 44px;
-    justify-content: space-between;
+    padding-bottom: 24px;
+    justify-content: center;
 }
 
-.social-link a {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.link .social-link:not(:last-child) {
+    margin-right: 10px;
 }
 
-.icon-instagram {
-    display: block;
-    background-image: url(../images/instagram.svg);
+.soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
 }
 
-.icon-tweeter {
-    display: block;
-    background-image: url(../images/tweeter.svg);
+.font {
+    --color3: #fff;
+    --color4: #afb1b8;
+    width: 44px;
+    height: 44px;
 }
 
-.icon-facebook {
-    display: block;
-    background-image: url(../images/facebook.svg);
-}
-
-.icon-linkedin {
-    display: block;
-    background-image: url(../images/linkedin.svg);
+.font:hover {
+    --color3: var(--accent-color);
+    --color4: white;
 }
 
 
 /*Постоянные клиенты*/
 
-.label a {
-    content: '';
-    display: inline-block;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    width: 170px;
-    height: 90px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.yaco {
-    display: block;
-    background-image: url(../images/logo1.svg);
-    background-size: 45px;
-}
-
-.tagline {
-    display: block;
-    background-image: url(../images/logo2.svg);
-    background-size: 40px 52px;
-}
-
-.company {
-    display: block;
-    background-image: url(../images/logo3.svg);
-    background-size: 41px 43px;
-}
-
-.foster {
-    display: block;
-    background-image: url(../images/logo4.svg);
-    background-size: 80px 42px;
-}
-
-.brand {
-    display: block;
-    background-image: url(../images/logo5.svg);
-    background-size: 59px 48px;
-}
-
-.ctl {
-    display: block;
-    background-image: url(../images/logo6.svg);
-    background-size: 89px 46px;
-}
-
-.clients .label.label:not(:first-child) {
-    margin-left: 25px;
+.clients>.icon+.icon {
+    margin-left: 30px;
 }
 
 .logotype {
@@ -483,9 +424,15 @@ main .text {
     justify-content: space-between;
 }
 
-.logotype a:hover,
-.logotype a:focus {
-    background-color: var(--accent-color);
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    min-width: 170px;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
 
 
