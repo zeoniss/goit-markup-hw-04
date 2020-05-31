@@ -13,22 +13,14 @@ body {
 
 /*Header*/
 
-.envelope {
-    width: 16px;
-    height: 11px;
+.mark {
     margin-right: 10px;
+    --color1: #757575;
 }
 
-.smartphone {
-    width: 15px;
-    height: 11px;
-    margin-right: 10px;
-    fill: #757575;
-}
-
-.link-header-font:hover,
-.link-header-font:focus {
-    color: var(--accent);
+.link-header-font .mark:hover,
+.link-header-font .mark:focus {
+    --color1: var(--accent-color);
 }
 
 .logo-lin {
@@ -85,9 +77,7 @@ body {
 }
 
 .site-nav .link-header-font:hover,
-.site-nav .link-header-font:focus,
-.auth-nav .link-header-font:hover,
-.auth-nav .link-header-font:focus {
+.site-nav .link-header-font:focus {
     color: var(--accent-color);
 }
 
