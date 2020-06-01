@@ -13,14 +13,18 @@ body {
 
 /*Header*/
 
-.mark {
-    margin-right: 10px;
-    --color1: #757575;
+.unit:hover .link-header-font,
+.unit:focus .link-header-font {
+    color: var(--accent-color);
 }
 
-.link-header-font .mark:hover,
-.link-header-font .mark:focus {
-    --color1: var(--accent-color);
+.unit:not(:last-child) {
+    margin-right: 30px;
+}
+
+.mark {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .logo-lin {
@@ -110,7 +114,6 @@ main .text {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid orangered;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -413,13 +416,13 @@ main .text {
 
 /*Постоянные клиенты*/
 
-.clients>.icon+.icon {
-    margin-left: 30px;
+.label:not(:last-child) {
+    margin-right: 30px;
 }
 
 .logotype {
     display: flex;
-    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .icon {
@@ -431,6 +434,21 @@ main .text {
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+}
+
+.icon:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.icon:active,
+.icon:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.brand:hover {
+    fill: var(--accent-color);
 }
 
 
@@ -691,7 +709,7 @@ main .text {
 
 .footer-links {
     display: flex;
-    justify-content: space-between;
+    margin-top: 21px;
 }
 
 .footer-links a:hover,
@@ -705,39 +723,34 @@ main .text {
     justify-content: space-between;
 }
 
-.links a {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
+.join-us {
+    margin-bottom: 30px;
 }
 
-.links a:hover {
+.links {
+    margin-right: 10px;
+}
+
+.link-id {
+    display: block;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-id:hover {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     background-color: var(--accent-color);
 }
 
-.instagram {
-    display: block;
-    background-image: url(../images/instagramfooter.svg);
-}
-
-.tweeter {
-    display: block;
-    background-image: url(../images/twitterfooter.svg);
-}
-
-.facebook {
-    display: block;
-    background-image: url(../images/facebookfooter.svg);
-}
-
-.linkedin {
-    display: block;
-    background-image: url(../images/linkedinfooter.svg);
+.link-id:active,
+.link-id:focus {
+    background-color: var(--accent-color);
 }
 
 .address,
@@ -751,6 +764,10 @@ main .text {
     /* or 171% */
     letter-spacing: 0.03em;
     color: #ffffff;
+}
+
+.subscribe {
+    margin-bottom: 40px;
 }
 
 .decorate {
