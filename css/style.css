@@ -475,6 +475,10 @@ main .text {
     flex-wrap: wrap;
 }
 
+.container-flex .card:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .signature {
     width: 370px;
     height: 110px;
@@ -497,6 +501,7 @@ main .text {
     height: 404px;
     margin-right: 30px;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .card:nth-child(3n) {
@@ -626,7 +631,7 @@ main .text {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    padding-bottom: 56px;
+    padding-bottom: 21px;
 }
 
 .address {
@@ -709,7 +714,6 @@ main .text {
 
 .footer-links {
     display: flex;
-    margin-top: 21px;
 }
 
 .footer-links a:hover,
@@ -724,7 +728,7 @@ main .text {
 }
 
 .join-us {
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 }
 
 .links {
@@ -767,7 +771,7 @@ main .text {
 }
 
 .subscribe {
-    margin-bottom: 40px;
+    margin-bottom: 85px;
 }
 
 .decorate {
